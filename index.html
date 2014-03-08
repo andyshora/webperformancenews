@@ -16,12 +16,16 @@
       padding: 0;     
     }
     body {
-      border-top: solid 20px #981c21;
+      border-top: solid 20px #E4E4E4;
       font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
-      text-align: center;
-      color: #fff;
-      background: #d73939;
+      text-align: left;
+      color: #414141;
+      background: #fff;
       padding-top: 50px;
+    }
+    header {
+      text-align: center;
+      padding: 0 2em;
     }
     h1 {
       margin: 1em 0 0;
@@ -36,7 +40,6 @@
     ul {
       margin:0 2em;
       padding:2em 0;
-      background: #d73939 url('./stripe.gif') 50% repeat-y;
     }
       ul li {
         margin: 4em 0;
@@ -44,7 +47,7 @@
         list-style: none;
       }
       ul li p {
-        margin: 0.5em;
+        margin: 0.5em 0;
         line-height: 1.2em;
       }
 
@@ -63,11 +66,7 @@
 
 
     time {
-      background: #fff;
       color:#d73939;
-      padding:0.2em 0.5em;
-      margin:0.4em;
-      border-radius: 3px
     }
 
     .news {
@@ -77,8 +76,10 @@
         color: #8b191f;
       }
 
-    .title {
+    .url {
       font-size: 1.4em;
+      line-height: 1em;
+      display: block;
     }
 
     img {
@@ -110,11 +111,9 @@
       }
 
     @media all and (min-width: 320px) {
-      
       h1 {
         font-size: 1.6em;
       }
-
     }
 
     @media all and (min-width: 600px) {
@@ -122,12 +121,8 @@
         font-size: 3em;
       }
       h2 {
-        font-size: 2.8em;
-        margin: 1.4em 0 -0.2em;
-      }
-      ol.rules {
-        font-size: 0.9em;
-        width: 310px;
+        font-size: 1.8em;
+        margin: .5em 0 -0.2em;
       }
     }
 
@@ -143,8 +138,7 @@
     <li>
       <a class="url" href="{{ news.url }}">{{ news.title }}</a>
       <p><time datetime="{{ news.date }}">{{ news.date | date_to_string }}</time></p>
-      <p class="description">{{ news.description }}</p>
-      <p>By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
+      <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
     </li>
   {% endfor %}
   </ul>
