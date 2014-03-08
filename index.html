@@ -21,34 +21,17 @@
       text-align: center;
       color: #fff;
       background: #d73939;
+      padding-top: 50px;
     }
     h1 {
       margin: 1em 0 0;
       font-size: 3em;
-      text-shadow: -3px 7px rgba(0,0,0,0.2);
+      line-height: 1em;
     }
     h2 {
-      font: 2em normal "Lato";
-      margin: 1.2em 0 -0.2em;
+      font: 1.3em normal "Lato";
+      margin: .5em 10px -0.2em;
     }
-
-    ol.rules {
-      width: 200px;
-      margin: 0 auto 10px;
-      padding: 1em 2.8em;
-      font-size: 0.8em;
-      color:#fff;
-      background: #d73939;
-      border-radius: 15px;
-      box-shadow: 0 10px 0px 0 #981c21;
-      list-style-position: inside;
-      text-indent: -1em;
-    }
-      ol.rules li {
-        text-align:left;
-        line-height: 1.2em;
-        margin-bottom:0.5em;
-      }
 
     ul {
       margin:0 2em;
@@ -77,16 +60,7 @@
     a:focus {
       color:#fff; 
     }
-      a.photo img {
-        background-color: #d73939;
-      }
 
-    a.photo {
-      border-bottom-style: none;
-    }
-    a.photo:hover img {
-      background-color: #981c21;
-    }
 
     time {
       background: #fff;
@@ -103,6 +77,10 @@
         color: #8b191f;
       }
 
+    .title {
+      font-size: 1.4em;
+    }
+
     img {
       width: 100px;
       height: 100px;
@@ -115,7 +93,7 @@
 
     footer {
       margin: 0;
-      padding:2em 4em 4em;
+      padding: 2em 4em 4em;
       background-color: #191919;
       font-size: 0.9em;
       color:#ccc;
@@ -131,10 +109,17 @@
         border-color: #fff;
       }
 
+    @media all and (min-width: 320px) {
+      
+      h1 {
+        font-size: 1.6em;
+      }
+
+    }
+
     @media all and (min-width: 600px) {
       h1 {
-        font-size: 6em;
-        text-shadow: -3px 10px rgba(0,0,0,0.2);
+        font-size: 3em;
       }
       h2 {
         font-size: 2.8em;
