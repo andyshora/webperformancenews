@@ -1,0 +1,170 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Performance News, the weekly newsletter on everything web performance related</title>
+  <meta >
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ%2C.%22%3A%5B%5D()'rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  
+    html, body {
+      margin: 0;
+      padding: 0;     
+    }
+    body {
+      border-top: solid 20px #981c21;
+      font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
+      text-align: center;
+      color: #fff;
+      background: #d73939;
+    }
+    h1 {
+      margin: 1em 0 0;
+      font-size: 3em;
+      text-shadow: -3px 7px rgba(0,0,0,0.2);
+    }
+    h2 {
+      font: 2em normal "Lato";
+      margin: 1.2em 0 -0.2em;
+    }
+
+    ol.rules {
+      width: 200px;
+      margin: 0 auto 10px;
+      padding: 1em 2.8em;
+      font-size: 0.8em;
+      color:#fff;
+      background: #d73939;
+      border-radius: 15px;
+      box-shadow: 0 10px 0px 0 #981c21;
+      list-style-position: inside;
+      text-indent: -1em;
+    }
+      ol.rules li {
+        text-align:left;
+        line-height: 1.2em;
+        margin-bottom:0.5em;
+      }
+
+    ul {
+      margin:0 2em;
+      padding:2em 0;
+      background: #d73939 url('./stripe.gif') 50% repeat-y;
+    }
+      ul li {
+        margin: 4em 0;
+        padding: 0;
+        list-style: none;
+      }
+      ul li p {
+        margin: 0.5em;
+        line-height: 1.2em;
+      }
+
+    a:link,
+    a:visited {
+      color:#ff9ea9;
+      color:#ff8f8c;
+      text-decoration: none;
+      padding-bottom: 0.3em;
+      border-bottom: solid 1px #ff8f8c;
+    }
+    a:hover,
+    a:focus {
+      color:#fff; 
+    }
+      a.photo img {
+        background-color: #d73939;
+      }
+
+    a.photo {
+      border-bottom-style: none;
+    }
+    a.photo:hover img {
+      background-color: #981c21;
+    }
+
+    time {
+      background: #fff;
+      color:#d73939;
+      padding:0.2em 0.5em;
+      margin:0.4em;
+      border-radius: 3px
+    }
+
+    .news {
+      font-size: 1.4em;
+    }
+      .news span {
+        color: #8b191f;
+      }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 108px;
+      border: solid 2px #fff;
+      margin: 0 0 1em;
+      padding: 6px;
+      box-shadow: -10px 15px 0px 0 rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin: 0;
+      padding:2em 4em 4em;
+      background-color: #191919;
+      font-size: 0.9em;
+      color:#ccc;
+    }
+      footer a:link,
+      footer a:visited {
+        color: #981c21;
+        border-color: #981c21;
+      }
+      footer a:hover,
+      footer a:focus {
+        color: #fff;
+        border-color: #fff;
+      }
+
+    @media all and (min-width: 600px) {
+      h1 {
+        font-size: 6em;
+        text-shadow: -3px 10px rgba(0,0,0,0.2);
+      }
+      h2 {
+        font-size: 2.8em;
+        margin: 1.4em 0 -0.2em;
+      }
+      ol.rules {
+        font-size: 0.9em;
+        width: 310px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Performance News</h1>
+    <h2>Everything web performance related from around the web this week!</h2>
+  </header>
+  <ul>
+  {% for news in site.data.news %}
+    <li>
+      <a class="url" href="{{ news.url }}">{{ news.title }}</a>
+      <p><time datetime="{{ news.date }}">{{ news.date | date_to_string }}</time></p>
+      <p class="description">{{ news.description }}</p>
+      <p>By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
+    </li>
+  {% endfor %}
+  </ul>
+  <footer>
+    <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a></p>
+  </footer>
+</body>
+</html>
