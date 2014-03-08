@@ -13,8 +13,8 @@ layout: none
         <title>{{ news.title | xml_escape }}</title>
         <description>{{ news.description | xml_escape }}</description>
         <pubDate>{{ news.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <author>http://twitter.com/{{ news.author }}</author>
         <link>{{ news.url }}</link>
-        <guid isPermaLink="true">{{ news.url }}</guid>
       </item>
     {% endfor %}
   </channel>
