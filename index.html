@@ -53,20 +53,18 @@
 
     a:link,
     a:visited {
-      color:#ff9ea9;
-      color:#ff8f8c;
+      color: #B63D3A;
       text-decoration: none;
       padding-bottom: 0.3em;
       border-bottom: solid 1px #ff8f8c;
     }
     a:hover,
     a:focus {
-      color:#fff; 
+      color: #C05451; 
     }
 
-
     time {
-      color:#d73939;
+      color: #d73939;
     }
 
     .news {
@@ -126,12 +124,40 @@
       }
     }
 
+    hr {
+      height: 1px;
+      border: none;
+      width: 100%;
+      background: #981c21;
+    }
+
+    #mc_embed_signup{
+      margin: 20px 0;
+      clear: left;
+      font: 14px Helvetica,Arial,sans-serif;
+    }
+
   </style>
 </head>
 <body>
   <header>
     <h1>Web Performance News</h1>
     <h2>Everything web performance related from around the web this week!</h2>
+    <hr>
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+    <div id="mc_embed_signup">
+      <form action="http://managewith.us2.list-manage.com/subscribe/post?u=0cd6c1319d2fbfc92b5a96ff3&amp;id=6cec6576b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Subscribe to our mailing list</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_0cd6c1319d2fbfc92b5a96ff3_6cec6576b0" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </form>
+    </div>
+
+    <!--End mc_embed_signup-->
   </header>
   <ul>
   {% for news in site.data.news %}
@@ -143,7 +169,7 @@
   {% endfor %}
   </ul>
   <footer>
-    <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a></p>
+    <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a>. You can tweet me submission ideas, or email me myfullname@gmail.com.</p>
   </footer>
 </body>
 </html>
