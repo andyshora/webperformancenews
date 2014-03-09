@@ -1,5 +1,30 @@
+- date: 2014-03-10 09:00:00 +0000
+  title: Nginx Performance Tuning. How to do it.
+  type: article
+  author: slashrootin
+  description: See how you can modify your nginx configuration to give it a big performance boost.
+  url: http://www.slashroot.in/nginx-web-server-performance-tuning-how-to-do-it
+  class: normal
+  
+- date: 2014-03-10 09:00:00 +0000
+  title: Paparazzo
+  type: article
+  author: rodowi
+  description: A high performance web proxy for serving MJPG streams to the masses.
+  url: https://www.npmjs.org/package/paparazzo
+  class: normal
+  
+- date: 2014-03-10 09:00:00 +0000
+  title: Designing for Performance (VIDEO)
+  type: video
+  author: laraswanson
+  description: This presentation focuses on performance basics from a design and front end perspective, including tips for optimizing HTML, CSS, and images.
+  url: http://www.youtube.com/watch?v=EOz0ks0eWDM&sns=em
+  class: normal
+  
 - date: 2014-03-09 09:00:00 +0000
   title: The 'mozjpeg' Project
+  type: article
   author: mozilla
   description: Mozilla have just announced a project to try to shave another 10 percent off images compressed with the standard.
   url: https://blog.mozilla.org/research/2014/03/05/introducing-the-mozjpeg-project/
@@ -7,6 +32,7 @@
   
 - date: 2014-03-09 09:00:00 +0000
   title: CSS Blend Modes
+  type: article
   author: chriscoyier‎
   description: Some amazing blending effects achieved in browser with CSS Blend Modes. Here's a few different ways of doing it.
   url: http://css-tricks.com/basics-css-blend-modes/
@@ -14,6 +40,7 @@
   
 - date: 2014-03-08 09:00:00 +0000
   title: Grunt YSlow
+  type: article
   author: andyshora
   description: A Grunt Task to Measure and Grade Web Page Performance.
   url: http://andyshora.com/grunt-yslow.html
@@ -21,6 +48,7 @@
   
 - date: 2014-03-08 09:00:00 +0000
   title: The browser cache is Vary broken
+  type: article
   author: jaffathecake
   description: If you use "Vary" to negotiate content, the responses will fight for the same cache space. Additionally, IE ignores "max-age" and Safari is buggy.
   url: http://jakearchibald.com/2014/browser-cache-vary-broken/
