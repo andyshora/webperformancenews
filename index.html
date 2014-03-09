@@ -39,20 +39,36 @@
       font: 1.2em normal "Lato";
       margin: .5em 10px -0.2em;
     }
-
-    ul {
+    section {
       margin: 0 2em;
+    }
+    ul {
+      margin: 0;
       padding: 0 0 2em 0;
     }
       ul li {
-        margin: 4em 0;
-        padding: 0;
+        margin: 4em 0 .5em;
+        padding: 0 1%;
         list-style: none;
+        display: inline-block;
+        width: 46%;
+        vertical-align: top;
       }
       ul li p {
         margin: 0.5em 0;
         line-height: 1.2em;
       }
+
+    @media all and (min-width: 768px) {
+      ul li {
+        margin: 4em 0 1em;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+      }
+    }
 
     a:link,
     a:visited {
@@ -167,15 +183,18 @@
     </div>
 
   </header>
-  <ul>
-  {% for news in site.data.news %}
-    <li>
-      <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-      <p><time datetime="{{ news.date }}">{{ news.date | date_to_string }}</time></p>
-      <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
-    </li>
-  {% endfor %}
-  </ul>
+  <section>
+    <h1>Our Latest Articles</h1>
+    <ul>
+    {% for news in site.data.news %}
+      <li>
+        <a class="url" href="{{ news.url }}">{{ news.title }}</a>
+        <p><time datetime="{{ news.date }}">{{ news.date | date_to_string }}</time></p>
+        <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
   <footer>
     <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a>. Feel free to tweet me submission ideas. <a href="feed.xml">RSS Feed</a></p>
   </footer>
