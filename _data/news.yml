@@ -1,4 +1,11 @@
 - date: 2014-03-09 09:00:00 +0000
+  title: The 'mozjpeg' Project
+  author: mozilla
+  description: Mozilla have just announced a project to try to shave another 10 percent off images compressed with the standard.
+  url: https://blog.mozilla.org/research/2014/03/05/introducing-the-mozjpeg-project/
+  class: normal
+  
+- date: 2014-03-09 09:00:00 +0000
   title: CSS Blend Modes
   author: chriscoyier‎
   description: Some amazing blending effects achieved in browser with CSS Blend Modes. Here's a few different ways of doing it.
