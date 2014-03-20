@@ -1,0 +1,56 @@
+issue_number: 2
+
+articles:
+ - url: http://mntr.dk/2014/push-the-post-get-paradigm/
+   title: PUSH, the post GET paradigm
+   description: A nice overview to get us excited about using SPDY/HTTP2, the new, faster protocol for serving our websites.
+   author: _munter_
+ - url: http://nginx.com/blog/http-keepalives-and-web-performance/
+   title: HTTP Keepalive Connections and Web Performance
+   description: A good introduction to HTTP and Keepalive Connections, investigating how HTTP operates and how common HTTP servers process HTTP transactions.
+   author: nginxorg
+ - url: https://hacks.mozilla.org/2014/03/jsdelivr-the-advanced-open-source-public-cdn/
+   title: jsDelivr – The advanced open source public CDN
+   description: jsDelivr is a free and open source CDN created to help developers and webmasters. There are no popularity restrictions and all kinds of files are allowed, including JavaScript libraries, jQuery plugins, CSS frameworks, fonts and more.
+   author: jimaek
+ - url: http://aerotwist.com/blog/my-performance-audit-workflow/
+   title: My Performance Audit Workflow
+   description: A nice and clear overview of how to do web performance analysis.
+   author: aerotwist
+ - url: http://mercury.io/blog/the-psychology-of-waiting-loading-animations-and-facebook
+   title: The Psychology of Waiting, Loading Animations, and Facebook
+   description: When an app is loading & you use a custom loading indicator, users think the app is slow—showing a standard spinny, they blame their phone.
+   author: seekbus
+
+videos:
+ - url: https://www.youtube.com/watch?v=7ubJzEi3HuA
+   title: Speed, Performance, and Human Perception
+   description: 
+   author: igrigorik
+ - url: https://www.youtube.com/watch?v=R8W_6xWphtw
+   title: The Critical Path
+   description: A great overview on the critical path
+   author: paul_irish
+
+tweeps:
+ - rank: 1
+   name: Ilya Grigorik
+   handle: igrigorik
+   bio: Developer Advocate at Google, working on everything web performance related. Protocols, standards, browser performance...
+ - rank: 2
+   name: Dmitriy A.
+   handle: jimaek
+   bio: Working for MaxCDN. In love with technology, high performance and fast web.
+
+tools:
+ - url: http://petercollingridge.appspot.com/svg-editor
+   title: SVG Editor and Optimizer
+   description: abc
+   author: Aleatoric
+
+sites:
+ - rank: 1
+   author: Cenk
+   url: https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fhabeicheigentlicheinenmigrationshintergrund.de%2F
+   site_url: habeicheigentlicheinenmigrationshintergrund.de
+   description: A pretty random site this week, helping Germans find out if they are likely to have an immigrant background. Scoring 99% on both mobile and desktop, and 100% for mobile UX, @Cenk has done a phenominal job!

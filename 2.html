@@ -1,0 +1,86 @@
+---
+---
+
+<h2 class="null">Here&#39;s this week&#39;s web performance&nbsp;news...</h2>
+
+<h3>Don&#39;t forget to follow <a href="https://twitter.com/webperfnews" target="_blank">@webperfnews</a> on Twitter!</h3>
+
+<hr />&nbsp;
+<h2 class="null">Articles</h2>
+
+<p>Here&#39;s a mix of some good reads this week on web performance.</p>
+&nbsp;
+
+{% for a in site.data.news2.articles %}
+<h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+<p>{{ a.description }}</p>
+{% endfor %}
+
+&nbsp;<hr />&nbsp;
+
+<h2 class="mc-toc-title">Videos</h2>
+
+<p>Grab a coffee, pretend to do some work, but secretly watch these awesome videos.</p>
+&nbsp;
+
+
+{% for a in site.data.news2.videos %}
+<h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+<p>{{ a.description }}</p>
+{% endfor %}
+
+&nbsp;<hr />&nbsp;
+
+<h2 class="null">Tools</h2>
+
+<p>A pretty random mix of tools related to web performance, found this week...</p>
+&nbsp;
+
+{% for a in site.data.news2.tools %}
+<h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+<p>{{ a.description }}</p>
+{% endfor %}
+
+&nbsp;<hr />&nbsp;
+<h2 class="null">#webperf Tweeps</h2>
+
+<p>Here&#39;s who to follow this week for the best #webperf tweets...</p>
+&nbsp;
+
+
+{% for a in site.data.news2.tweeps %}
+<h3 class="null">{{ a.rank }}. {{ a.name }}&nbsp;<a href="https://twitter.com/{{ a.handle }}" target="_blank">@{{ a.handle }}</a></h3>
+
+<p><em>{{ a.bio }}</em></p>
+{% endfor %}
+
+&nbsp;<hr />&nbsp;
+
+
+<h2 class="null">Dayum, that site is fast</h2>
+
+<p>Here&#39;s this week&#39;s showcase of the best performing websites, according to Google&#39;s PageSpeed Insights Tool...</p>
+&nbsp;
+
+{% for a in site.data.news2.sites %}
+<h3 class="null">{{ a.rank }}.&nbsp;<a href="{{ a.url }}" target="_blank">{{ a.site_url }}</a></h3>
+<p>{{ a.description }} <em>Dayum, that site is fast.</em><br />
+<br />
+<br /></p>
+{% endfor %}
+
+
+<p><em>Do you know any other fast sites? Tweet a PageSpeed Insights link to see it included here next week!</em></p>
+&nbsp;
+
+<hr />&nbsp;
+<h3 class="null">You should totally follow all the people featured above...</h3>
+<br />
+Here&#39;s the list on Twitter:<br />
+<a href="https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news2.issue_number }}/members" target="_blank">https://twitter.com/WebPerfNews/webperf-people-{{ site.data.issue_number }}/members</a><br />
+<br />
+<br />
+Hope you enjoyed the newsletter. Until next week, let&#39;s keep making the internet faster for everyone!<br />
+<br />
+- Andy<br />
+&nbsp;
