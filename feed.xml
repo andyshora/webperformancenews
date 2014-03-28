@@ -8,11 +8,20 @@ layout: none
     <description>The weekly newsletter on everything web performance</description>    
     <link>http://webperformancenews.com/</link>
     <atom:link href="http://webperformancenews.com/feed.xml" rel="self" type="application/rss+xml" />
-    {% for news in site.data.news limit:10 %}
+    {% for news in site.data.news3.articles limit:10 %}
       <item>
         <title>{{ news.title | xml_escape }}</title>
         <description>{{ news.description | xml_escape }}</description>
-        <pubDate>{{ news.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <pubDate>{{ site.data.news3.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <author>http://twitter.com/{{ news.author }}</author>
+        <link>{{ news.url }}</link>
+      </item>
+    {% endfor %}
+    {% for news in site.data.news3.videos limit:10 %}
+      <item>
+        <title>{{ news.title | xml_escape }}</title>
+        <description>{{ news.description | xml_escape }}</description>
+        <pubDate>{{ site.data.news3.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>http://twitter.com/{{ news.author }}</author>
         <link>{{ news.url }}</link>
       </item>
