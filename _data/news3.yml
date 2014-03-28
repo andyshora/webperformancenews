@@ -68,6 +68,6 @@ sites:
 worst:
   - rank: 1
     title: The Daily Mail
-    description: Normally best known for inciting fear into our very souls here in the UK, The Daily Fail have decided to maintain the same tactics when serving up their website to our innocent browsers. A huge waterfall of requests, and coupled with the fact it's one of the most popular sites in the UK, it means this website is pretty much responsible for slowly destroying our planet.
+    description: Normally best known for inciting fear into our very souls here in the UK, The Daily Fail have decided to maintain the same tactics when serving up their website to our innocent browsers. A huge waterfall of requests, and coupled with the fact it's one of the most popular sites in the UK, it means this website could well be responsible for slowly destroying our planet via energy consumption.
     requests: 599
     url: http://www.webpagetest.org/result/140327_AV_J6Q/1/details/
