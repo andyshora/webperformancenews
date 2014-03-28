@@ -223,9 +223,16 @@
   <section>
     <h1>Archived Newsletters</h1>
     <h3><a href="newsletter-3.html" title="Issue 3">Issue 3</a></h3>
-    <p>Sent out on {{ site.data.news3.date | date_to_string }}, and featuring {% for a in site.data.news3.articles %}<a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, {% endfor %} and many more interesting people.</p>
+    <p>Sent out on {{ site.data.news3.date | date_to_string }}, and featuring 
+      {% for a in site.data.news3.articles %}
+      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
+      {% endfor %} 
+      and many more interesting people.</p>
     <h3><a href="newsletter-2.html" title="Issue 2">Issue 2</a></h3>
-    <p>Sent out on {{ site.data.news2.date | date_to_string }}, and featuring {% for a in site.data.news2.articles %}<a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, {% endfor %} and and loads more folk.</p>
+    <p>Sent out on {{ site.data.news2.date | date_to_string }}, and featuring 
+      {% for a in site.data.news2.articles %}<a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
+      {% endfor %} 
+      and and loads more folk.</p>
 
   </section>
   <footer>
