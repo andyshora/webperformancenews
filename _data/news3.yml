@@ -1,0 +1,72 @@
+issue_number: 3
+
+articles:
+ - url: http://bradfrostweb.com/blog/post/performance-as-design/
+   title: Performance As Design
+   description: Brad explains how it's time for us to treat performance as an essential design feature, not just as a technical best practice.
+   author: brad_frost
+ - url: http://www.igvita.com/2014/03/26/why-is-my-cdn-slow-for-mobile-clients/
+   title: Why is my CDN 'slow' for mobile clients?
+   description: To understand why the relative metrics between desktop and mobile CDN performance are misleading many otherwise well-informed teams, it helps to take a step back and consider the actual topology of the internet, plus what CDNs can and cannot do.
+   author: igrigorik
+ - url: http://code.hootsuite.com/why-using-requirejs-could-hurt-your-web-performance/
+   title: Why Using RequireJS As-Is Could Hurt Your Web Performance
+   description: A quick overview explaining why using RequireJS may harm your perceived loading time.
+   author: theasta
+ - url: http://yeoman.io/blog/performance-optimization.html
+   title: Grunt And Gulp Tasks For Performance Optimization
+   description: Delays in performance have the potential to impact user engagement, experience and revenue. Thankfully, Google's 'Make The Web Faster' team recommend a set of best-practice rules for keeping your pages lean, fast and smooth.
+   author: addyosmani
+
+videos:
+ - url: https://www.youtube.com/watch?v=znjy4Kl3IfU
+   title: The Perception of Speed
+   description: Fastly Chief Performance Officer Steve Souders' talk on the Perception of Speed at the 2014 Fluent Conference in San Francisco.
+   author: Souders
+ - url: https://www.youtube.com/watch?v=VKTWdaupft0
+   title: Instant mobile web apps
+   description: This great talk covers mobile web (anti-)patterns with ultimate goal of getting your sites to render in less than a second.
+   author: bryanmcquade
+
+tweeps:
+ - rank: 1
+   name: Steve Souders
+   handle: Souders
+   bio: Fastly Chief Performance Officer
+ - rank: 2
+   name: Alexandrine Boissière
+   handle: theasta
+   bio: Senior Frontend Engineer. Computers need love. Spreading that love at HootSuite
+ - rank: 3
+   name: Bryan McQuade
+   handle: bryanmcquade
+   bio: Page Speed developer. Software Engineer at Google.
+
+tools:
+ - url: https://www.npmjs.org/package/grunt-pagespeed
+   title: grunt-pagespeed
+   description: Grunt plugin for running Google PageSpeed Insights.
+   author: jrcryer
+ - url: http://www.resrc.it/
+   title: Response images, served async from a CDN
+   description: ReSRC delivers responsive images on-demand, direct from the cloud.
+   author: ReSRCit
+
+sites:
+ - rank: 1
+   author: SaraSoueidan
+   url: https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsarasoueidan.com%2F&tab=mobile
+   site_url: http://sarasoueidan.com/
+   description: Scoring 97% for desktop, 91% for mobile, and a maximum 100% for mobile UX, a huge round of applause goes to Sara!
+ - rank: 2
+   author: cshold
+   url: https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.carsonshold.com%2F
+   site_url: http://www.carsonshold.com/
+   description: I hear that Carson has been bumping up his score even higher as I write this! As it stands he's also achieved 97% for desktop, 91% for mobile, and 99% for mobile UX. Thanks for making the internet faster, Carson.
+
+worst:
+  - rank: 1
+    title: The Daily Mail
+    description: Normally best known for inciting fear into our very souls here in the UK, The Daily Fail have decided to maintain the same tactics when serving up their website to our innocent browsers. A huge waterfall of requests, and coupled with the fact it's one of the most popular sites in the UK, it means this website is pretty much responsible for slowly destroying our planet.
+    requests: 599
+    url: http://www.webpagetest.org/result/140327_AV_J6Q/1/details/

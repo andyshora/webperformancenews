@@ -5,6 +5,10 @@ articles:
    title: PUSH, the post GET paradigm
    description: A nice overview to get us excited about using SPDY/HTTP2, the new, faster protocol for serving our websites.
    author: _munter_
+ - url: http://aerotwist.com/blog/my-performance-audit-workflow/
+   title: My Performance Audit Workflow
+   description: Paul Lewis gives a nice and clear overview of how to do web performance analysis.
+   author: aerotwist
  - url: http://nginx.com/blog/http-keepalives-and-web-performance/
    title: HTTP Keepalive Connections and Web Performance
    description: A good introduction to HTTP and Keepalive Connections, investigating how HTTP operates and how common HTTP servers process HTTP transactions.
@@ -13,10 +17,6 @@ articles:
    title: jsDelivr – The advanced open source public CDN
    description: jsDelivr is a free and open source CDN created to help developers and webmasters. There are no popularity restrictions and all kinds of files are allowed, including JavaScript libraries, jQuery plugins, CSS frameworks, fonts and more.
    author: jimaek
- - url: http://aerotwist.com/blog/my-performance-audit-workflow/
-   title: My Performance Audit Workflow
-   description: A nice and clear overview of how to do web performance analysis.
-   author: aerotwist
  - url: http://mercury.io/blog/the-psychology-of-waiting-loading-animations-and-facebook
    title: The Psychology of Waiting, Loading Animations, and Facebook
    description: When an app is loading & you use a custom loading indicator, users think the app is slow—showing a standard spinny, they blame their phone.
@@ -25,11 +25,11 @@ articles:
 videos:
  - url: https://www.youtube.com/watch?v=7ubJzEi3HuA
    title: Speed, Performance, and Human Perception
-   description: 
+   description: A keynote talk from Fluent conference this month. Ilya Grigorik showiong us that there is more to performance than milliseconds, kilobytes, and frames per second.﻿
    author: igrigorik
  - url: https://www.youtube.com/watch?v=R8W_6xWphtw
    title: The Critical Path
-   description: A great overview on the critical path
+   description: Paul Irish reveals the magic numbers behind page load times.
    author: paul_irish
 
 tweeps:
@@ -45,7 +45,7 @@ tweeps:
 tools:
  - url: http://petercollingridge.appspot.com/svg-editor
    title: SVG Editor and Optimizer
-   description: abc
+   description: A really handy jQuery based SVG editing and optimizing tool, with tons of options, aiming to slash bytes off your SVG files.
    author: Aleatoric
 
 sites:
