@@ -25,7 +25,7 @@ videos:
    description: Fastly Chief Performance Officer Steve Souders' talk on the Perception of Speed at the 2014 Fluent Conference in San Francisco.
    author: Souders
  - url: https://www.youtube.com/watch?v=VKTWdaupft0
-   title: Instant mobile web apps
+   title: Instant Mobile Web Apps
    description: This great talk covers mobile web (anti-)patterns with ultimate goal of getting your sites to render in less than a second.
    author: bryanmcquade
 
@@ -46,7 +46,7 @@ tweeps:
 tools:
  - url: https://www.npmjs.org/package/grunt-pagespeed
    title: grunt-pagespeed
-   description: Grunt plugin for running Google PageSpeed Insights.
+   description: A really handy Grunt plugin for running Google PageSpeed Insights.
    author: jrcryer
  - url: http://www.resrc.it/
    title: Response images, served async from a CDN
