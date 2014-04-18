@@ -1,0 +1,43 @@
+issue_number: 4
+date: 2014-04-18 15:00:00 +0000
+
+articles:
+ - url: https://developers.google.com/speed/docs/best-practices/rules_intro
+   title: Web Performance Best Practices
+   description: These rules are general front-end best practices you can apply at any stage of web development.
+   author: google‎
+ - url: http://bigqueri.es/t/sites-that-deliver-images-using-gzip-deflate-encoding/220
+   title: Sites that deliver Images using gzip/deflate encoding
+   description: Analysing which sites are incorrectly using gzip/deflate for their images.
+   author: Pganti
+ - url: http://blog.servergrove.com/2014/04/14/gzip-compression-works/
+   title: How GZIP Compression Works
+   description: Wrote a post about how GZIP works and how to enable it on web servers.
+   author: raulfraile
+
+tweeps:
+ - rank: 1
+   name: Chris Ruppel
+   handle: rupl
+   bio: Web Chef at FourKitchens. I like stretching the limits of CSS and making sites load fast on your phone. Working on my German accent.
+
+
+tools:
+ - url: 
+   title: 
+   description: 
+   author: 
+
+sites:
+ - rank: 
+   author: 
+   url: 
+   site_url: 
+   description: 
+
+worst:
+  - rank: 1
+    title: NBCNews
+    description: Seriously, wow. Here's a sample news article from NBCNews, which loads resources from most cities around the world to deliver you a story.
+    requests: 389
+    url: http://www.webpagetest.org/result/140418_K0_A18/1/details/
