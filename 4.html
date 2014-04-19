@@ -15,27 +15,9 @@ Here&#39;s a Twitter list of everyone featured in this week's newsletter:<br />
 &nbsp;<hr />&nbsp;
 
 
-<h2 class="null">Dayum, that site is fast</h2>
-
-<p>Here&#39;s this week&#39;s showcase of the best performing websites, according to Google&#39;s PageSpeed Insights Tool...</p>
-&nbsp;
-
-{% for a in site.data.news4.sites %}
-<h3 class="null">{{ a.rank }}.&nbsp;<a href="{{ a.url }}" target="_blank">{{ a.site_url }}</a></h3>
-<p>{{ a.description }} <em>Dayum, that site is fast.</em><br />
-<br />
-<br /></p>
-{% endfor %}
-
-
-<p><em>Do you know any other fast sites? Tweet a PageSpeed Insights link to see it included here next week!</em></p>
-
-&nbsp;<hr />&nbsp;
-
-
 <h2 class="null">Nothin but huge #webperf fails!</h2>
 
-<p>Finally here&#39;s a few massive #webperf LOLZ. But let's be nice and assume the developers have no control over what gets spat out to the browser on any of these sites...</p>
+<p>Here are a some massive #webperf LOLZ. But let's be nice and assume the developers have no control over what gets spat out to the browser on any of these sites...</p>
 &nbsp;
 
 {% for a in site.data.news4.worst %}
@@ -58,17 +40,6 @@ Here&#39;s a Twitter list of everyone featured in this week's newsletter:<br />
 
 &nbsp;<hr />&nbsp;
 
-<h2 class="null">Tools</h2>
-
-<p>A pretty random mix of tools related to web performance, found this week...</p>
-&nbsp;
-
-{% for a in site.data.news4.tools %}
-<h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
-<p>{{ a.description }}</p>
-{% endfor %}
-
-&nbsp;<hr />&nbsp;
 <h2 class="null">#webperf Tweeps</h2>
 
 <p>Here&#39;s who to follow this week for the best #webperf tweets...</p>

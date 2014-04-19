@@ -14,26 +14,21 @@ articles:
    title: How GZIP Compression Works
    description: Wrote a post about how GZIP works and how to enable it on web servers.
    author: raulfraile
+ - url: http://blog.radware.com/applicationdelivery/applicationaccelerationoptimization/2014/04/7-mobile-performance-myths/
+   title: 7 Mobile Web Performance Myths Debunked
+   description: There are a handful of assumptions that frequently come up when we read and talk about mobile performance. In this article, Tammy Everts reviews and debunks a few common myths.
+   author: tameverts
+
 
 tweeps:
  - rank: 1
    name: Chris Ruppel
    handle: rupl
    bio: Web Chef at FourKitchens. I like stretching the limits of CSS and making sites load fast on your phone. Working on my German accent.
-
-
-tools:
- - url: 
-   title: 
-   description: 
-   author: 
-
-sites:
- - rank: 
-   author: 
-   url: 
-   site_url: 
-   description: 
+ - rank: 2
+   name: Volkan Özçelik
+   handle: linkibol
+   bio: I have been, and I still am, involved with the dynamic medium of web communities and startups.
 
 worst:
   - rank: 1

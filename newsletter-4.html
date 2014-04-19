@@ -215,24 +215,6 @@
     <hr />
 
 
-    <h2 class="null">Dayum, that site is fast</h2>
-
-    <p>Here's this week's showcase of the best performing websites, according to Google's PageSpeed Insights Tool...</p>
-     
-
-    {% for a in site.data.news4.sites %}
-    <div class="article">
-    <h3 class="null">{{ a.rank }}. <a href="{{ a.url }}" target="_blank">{{ a.site_url }}</a></h3>
-    <p>{{ a.description }} <em>Dayum, that site is fast.</em></p>
-    </div>
-    {% endfor %}
-
-
-    <p><em>Do you know any other fast sites? Tweet a PageSpeed Insights link to see it included here next week!</em></p>
-
-    <hr />
-
-
     <h2 class="null">Nothin but huge #webperf fails!</h2>
 
     <p>It's Friday, so here's a few massive #webperf LOLZ. But let's be nice and assume the developers have no control over what gets spat out to the browser on any of these sites...</p>
@@ -258,19 +240,6 @@
     <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
     <p>{{ a.description }}</p>
     </div>
-    {% endfor %}
-
-    <hr />
-
-    <h2 class="null">Tools</h2>
-
-    <p>A pretty random mix of tools related to web performance, found this week...</p>
-     
-
-    {% for a in site.data.news4.tools %}
-    <div class="article">
-    <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
-    <p>{{ a.description }}</p>
     {% endfor %}
 
     <hr />
