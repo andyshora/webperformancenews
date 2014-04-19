@@ -221,6 +221,11 @@
   </section>
   <section>
     <h1>Archived Newsletters</h1>
+    <h3><a href="newsletter-4.html" title="Issue 4">Issue 4</a></h3>
+    <p>Sent out on {{ site.data.news4.date | date_to_string }}, and featuring 
+      {% for a in site.data.news4.articles %}
+      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
+      {% endfor %} and more.</p>
     <h3><a href="newsletter-3.html" title="Issue 3">Issue 3</a></h3>
     <p>Sent out on {{ site.data.news3.date | date_to_string }}, and featuring 
       {% for a in site.data.news3.articles %}
