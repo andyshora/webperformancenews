@@ -1,0 +1,49 @@
+issue_number: 5
+date: 2014-06-27 15:00:00 +0000
+
+articles:
+ - url: http://cruft.io/posts/rum-waterfall-charts-w3c-resource-timing-api/
+   title: RUM waterfall charts with the W3C Resource Timing API
+   description: See how you can convert page resource timings into waterfall charts using the open-source projects boomerang and boomcatch.
+   author: cruftio
+ - url: http://updates.html5rocks.com/2014/06/Automating-Web-Performance-Measurement
+   title: Automating Web Performance Measurement
+   description: Introducing a new module that works great with Gulp, Grunt and other build systems and can connect up to the PageSpeed Insights service and return a detailed report of your web performance.
+   author: addyosmani
+ - url: https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a
+   title: TTF to WOFF2 converting
+   description: Learn more about the next generation Web Font Format and convert TTF to WOFF2 over command line without setup.
+   author: wpseo
+ - url: http://sixrevisions.com/mobile/pay-attention-to-mobile-web-performance/?utm_content=6316448&utm_medium=social&utm_source=twitter
+   title: 13 Reasons Why You Should Pay Attention to Mobile Web Performance
+   description: Let's go over compelling data that demonstrate the importance of focusing on performance for mobile devices.
+   author: tameverts
+ - url: https://twitter.com/ThomasInTech/status/482175237404889093
+   title: An interesting World Cup-related tweet
+   description: Comparing benchmarks of Germany v USA tech
+   author: ThomasInTech
+ - url: http://blog.catchpoint.com/2014/06/19/widespread-effects-facebooks-latest-outage/?utm_content=bufferc5c9a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+   title: The Widespread Effects of Facebook’s Latest Outage
+   description: When the social media giant experienced an outage in their service, the ripple effects spread far and wide.
+   author: Catchpoint
+
+videos:
+ - url: https://www.youtube.com/watch?v=5pu80PUcNJ0
+   title: Google I/O 2014 - Perf culture
+   description: Lara Swanson and Paul Lewis explore how to curate a culture of performance internally at work. 
+   author: laraswanson
+
+
+tweeps:
+ - rank: 1
+   name: Sergej Müller
+   handle: wpseo
+   bio: Developer of wpSEO, Antispam Bee and other WordPress plugins. Minimalist, visionary, father.
+ - rank: 2
+   name: Thomas Gronbach
+   handle: ThomasInTech
+   bio: "Software Tech. #webperf #database #UI #velocity #analysis #security"
+ - rank: 3
+   name: Addy Osmani
+   handle: addyosmani
+   bio: Engineer at Google • Author • Polymer, Yeoman, Chrome • Creator of TodoMVC & others • Passionate about web tooling
