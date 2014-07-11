@@ -200,7 +200,7 @@
     {% for news in site.data.news6.articles %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news4.date }}">{{ site.data.news4.date | date_to_string }}</time></p>
+        <p><time datetime="{{ site.data.news6.date }}">{{ site.data.news6.date | date_to_string }}</time></p>
         <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
         <a href="{{ news.url }}" class="button">Read more</a>
       </li>
@@ -212,7 +212,7 @@
     {% for news in site.data.news6.videos %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news3.date }}">{{ site.data.news3.date | date_to_string }}</time></p>
+        <p><time datetime="{{ site.data.news6.date }}">{{ site.data.news6.date | date_to_string }}</time></p>
         <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
         <a href="{{ news.url }}" class="button">Read more</a>
       </li>
