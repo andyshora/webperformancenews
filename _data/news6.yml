@@ -1,0 +1,59 @@
+issue_number: 6
+date: 2014-07-11 15:00:00 +0000
+
+articles:
+ - url: https://gauntface.com/blog/2014/07/10/web-performance-monitor
+   title: Web Performance Monitor
+   description: gauntface shows us a pretty awesome dashboard for continuously testing out the performance of his site!
+   author: gauntface
+ - url: http://frontendbabel.info/articles/webpage-rendering-101/
+   title: What Every Frontend Developer Should Know About Webpage Rendering
+   description: An overview of how browsers render a web page and what they do to optimize rendering.
+   author: skutinru
+ - url: https://twitter.com/lmacvittie/status/484695308631171072
+   title: Why is the web so slow on my mobile device?
+   description: Featured tweet - a nice simple summary showing the reasons why websites load slower on mobile devices.
+   author: lmacvittie
+
+videos:
+ - url: https://www.youtube.com/watch?v=z-yU0sVdKTo
+   title: Netflix JavaScript Talks - Scale and Performance of a Large JavaScript Application
+   description: In this talk, Matt Seeley (@innerhtml) discusses the development approaches used at Netflix to build the JavaScript applications.
+   author: innerhtml
+ - url: https://www.youtube.com/watch?v=FAZJsxcykPs
+   title: Netflix JavaScript Talks - Async JavaScript with Reactive Extensions
+   description: "In this talk, you'll learn how Netflix uses the Reactive Extensions (Rx) library to build responsive user experiences that strive to be event-driven, scalable and resilient."
+   author: innerhtml
+ - url: https://www.youtube.com/watch?v=pNKnhBIVj4w
+   title: Getting Your PageSpeed Score Up
+   description: "PageSpeed Insights is a great way for developers to check how their site performs out in the wild, but how do you actually improve your score if it's not what you were expecting?" 
+   author: gauntface
+
+sites:
+ - rank: 1
+   author: AKQA
+   url: https://developers.google.com/speed/pagespeed/insights/?url=akqa.com&tab=desktop
+   site_url: http://www.akqa.com/
+   description: AKQA's redesign is not just beautiful in appearance, it scores a massive 92% on desktop, and 98% at mobile UX. Hats off!
+
+
+worst:
+- rank: 1
+ title: BBC News Special - The Reykjavik Confessions
+ description: "This parallaxy, scrolly, image-heavy article/story seems pretty detatched from the BBC's normal lightweight responsive approach to the web. The story is interesting, but the content is rich enough to keep you waiting for ages for it to load. Maybe it was part of the plan to build a bit of suspense over the 40 seconds you're left waiting?"
+ requests: 104
+ url: http://www.webpagetest.org/result/140711_49_H8R/1/details/
+
+tweeps:
+ - rank: 1
+   name: Matt Seeley
+   handle: innerhtml
+   bio: Plex software developer. Tweets are my own opinion.
+ - rank: 2
+   name: Jafar Husain
+   handle: jhusain
+   bio: Cross-Team Technical Lead for the Netflix UIs
+ - rank: 3
+   name: Matt Gaunt
+   handle: gauntface
+   bio: Developer Advocate for Chrome at Google

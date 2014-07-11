@@ -197,7 +197,7 @@
   <section>
     <h1>Latest Articles</h1>
     <ul>
-    {% for news in site.data.news4.articles %}
+    {% for news in site.data.news6.articles %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
         <p><time datetime="{{ site.data.news4.date }}">{{ site.data.news4.date | date_to_string }}</time></p>
@@ -209,7 +209,7 @@
 
     <h1>Latest Videos</h1>
     <ul>
-    {% for news in site.data.news3.videos %}
+    {% for news in site.data.news6.videos %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
         <p><time datetime="{{ site.data.news3.date }}">{{ site.data.news3.date | date_to_string }}</time></p>
@@ -221,6 +221,11 @@
   </section>
   <section>
     <h1>Archived Newsletters</h1>
+    <h3><a href="newsletter-5.html" title="Issue 5">Issue 5</a></h3>
+    <p>Sent out on {{ site.data.news5.date | date_to_string }}, and featuring 
+      {% for a in site.data.news5.articles %}
+      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
+      {% endfor %} and more.</p>
     <h3><a href="newsletter-4.html" title="Issue 4">Issue 4</a></h3>
     <p>Sent out on {{ site.data.news4.date | date_to_string }}, and featuring 
       {% for a in site.data.news4.articles %}
