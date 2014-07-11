@@ -18,7 +18,7 @@ articles:
 videos:
  - url: https://www.youtube.com/watch?v=z-yU0sVdKTo
    title: Netflix JavaScript Talks - Scale and Performance of a Large JavaScript Application
-   description: In this talk, Matt Seeley (@innerhtml) discusses the development approaches used at Netflix to build the JavaScript applications.
+   description: "In this talk, Matt Seeley discusses the development approaches used at Netflix to build the JavaScript applications."
    author: innerhtml
  - url: https://www.youtube.com/watch?v=FAZJsxcykPs
    title: Netflix JavaScript Talks - Async JavaScript with Reactive Extensions
@@ -39,16 +39,16 @@ sites:
 
 worst:
 - rank: 1
- title: BBC News Special - The Reykjavik Confessions
- description: "This parallaxy, scrolly, image-heavy article/story seems pretty detatched from the BBC's normal lightweight responsive approach to the web. The story is interesting, but the content is rich enough to keep you waiting for ages for it to load. Maybe it was part of the plan to build a bit of suspense over the 40 seconds you're left waiting?"
- requests: 104
- url: http://www.webpagetest.org/result/140711_49_H8R/1/details/
+  title: "BBC News Special - The Reykjavik Confessions"
+  description: "This parallaxy, scrolly, image-heavy article/story seems pretty detached from the BBC's normal lightweight responsive approach to the web. The story is interesting, but the content is rich enough to keep you waiting for ages for it to load. Maybe it was part of the plan to build up a bit of suspense over the 40 seconds you're left waiting?"
+  requests: 104
+  url: http://www.webpagetest.org/result/140711_49_H8R/1/details/
 
 tweeps:
  - rank: 1
    name: Matt Seeley
    handle: innerhtml
-   bio: Plex software developer. Tweets are my own opinion.
+   bio: Plex software developer.
  - rank: 2
    name: Jafar Husain
    handle: jhusain
