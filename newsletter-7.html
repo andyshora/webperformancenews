@@ -1,0 +1,340 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Performance News, the weekly newsletter on everything web performance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   html, body {
+      margin: 0;
+      padding: 0;     
+    }
+    body {
+      border-top: solid 20px #E4E4E4;
+      font: 16px/1.2em normal 'Open Sans', Helvetica, Arial, sans-serif;
+      text-align: left;
+      color: #414141;
+      background: #fff;
+      padding-top: 50px;
+    }
+    header {
+      text-align: center;
+      padding: 0 2em;
+    }
+    header > h1 {
+      padding-top: 176px;
+      background: url(wpn.png) center -50px no-repeat;
+    }
+    header > h1 > a {
+      border-bottom: none !important;
+    }
+    h1,h2,h3 {
+      font-weight: 300;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    p {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      margin: 1em 0 0;
+      font-size: 2em;
+      line-height: 1em;
+    }
+    h2 {
+      font: 1.2em normal 'Open Sans', Helvetica, Arial, sans-serif;
+      margin: .5em 10px -0.2em;
+    }
+    section {
+      margin: 0 2em;
+    }
+    section > h1 {
+      margin: 2em 5px 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 2em 0;
+    }
+      ul li {
+        margin: 2em 0;
+        padding: 0 1%;
+        list-style: none;
+        display: inline-block;
+        width: 46%;
+        vertical-align: top;
+      }
+      ul li p {
+        margin: 0.5em 0;
+        line-height: 1.2em;
+      }
+
+  @media only screen and (max-width: 768px) {
+    section > h1 {
+      margin: 2em 0 0;
+    }
+    ul li {
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+    
+
+    a:link,
+    a:visited {
+      color: #B63D3A;
+      text-decoration: none;
+      padding-bottom: 0.3em;
+      border-bottom: solid 1px #ff8f8c;
+    }
+    a:hover,
+    a:focus {
+      color: #C05451; 
+    }
+
+    time {
+      color: #d73939;
+    }
+
+    .news {
+      font-size: 1.4em;
+    }
+      .news span {
+        color: #8b191f;
+      }
+
+    .url {
+      font-size: 1.4em;
+      line-height: 1em;
+      display: block;
+    }
+
+    footer {
+      margin: 0;
+      padding: 2em 4em 2em;
+      background-color: #191919;
+      font-size: 0.9em;
+      color: #ccc;
+      text-align: center;
+    }
+      footer a:link,
+      footer a:visited {
+        color: #981c21;
+        text-decoration: none;
+        border: none;
+      }
+      footer a:hover,
+      footer a:focus {
+        color: #fff;
+        text-decoration: none;
+        border: none;
+      }
+
+    hr {
+      height: 1px;
+      border: none;
+      width: 100%;
+      background: #981c21;
+      margin: 50px 0;
+    }
+
+    #mc_embed_signup{
+      margin: 40px 0 0;
+      clear: left;
+      font: 14px Helvetica,Arial,sans-serif;
+      background: #E2FFE8;
+      padding: 15px 0;
+    }
+
+    #mc-embedded-subscribe {
+      padding: 10px;
+      background: rgb(26, 134, 52);
+      color: white;
+      border: none;
+      width: 200px;
+      font-size: 16px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      max-width: 80%;
+    }
+
+    .mc-field-group {
+      padding: 20px 0;
+    }
+    #mce-EMAIL {
+      padding: 10px;
+      width: 260px;
+      max-width: 80%;
+    }
+
+    .newsletter hr {
+      margin: 20px 0;
+      background: rgba(205, 153, 155, 0.19);
+    }
+    .newsletter h2 {
+      font: 1.4em normal 'Open Sans', Helvetica, Arial, sans-serif;
+      margin: 2em 0 -0.2em;
+      
+    }
+    .newsletter h3 {
+      line-height: 2em;
+    }
+    .article {
+      padding: 10px 0;
+    }
+    .signup {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">Web Performance News</a>: Issue {{ site.data.news7.issue_number }}</h1>
+    <h2>A free weekly newsletter containing articles and tips on web performance.</h2>
+    <p>Articles tweeted <a href="https://twitter.com/webperfnews">@webperfnews</a></p>
+  </header>
+  <section class="newsletter">
+    <h2 class="null">Here's this week's web performance news...</h2>
+
+    <h3>Don't forget to follow <a href="https://twitter.com/webperfnews" target="_blank">@webperfnews</a> on Twitter!</h3>
+
+    <hr /> 
+    <h3 class="null">Follow all of the people featured below on Twitter...</h3>
+    <br />
+    Here's a Twitter list of everyone featured in this week's newsletter:<br />
+    <a href="https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news7.issue_number }}/members" target="_blank">https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news7.issue_number }}/members</a><br />
+    <br />
+
+    <hr />
+
+
+    <h2 class="null">Dayum, that site is fast</h2>
+
+    <p>Here's this week's showcase of the best performing websites, according to Google's PageSpeed Insights Tool...</p>
+     
+
+    {% for a in site.data.news7.sites %}
+    <div class="article">
+    <h3 class="null">{{ a.rank }}. <a href="{{ a.url }}" target="_blank">{{ a.site_url }}</a></h3>
+    <p>{{ a.description }} <em>Dayum, that site is fast.</em></p>
+    </div>
+    {% endfor %}
+
+
+    <p><em>Do you know any other fast sites? Tweet a PageSpeed Insights link to see it included here next week!</em></p>
+
+    <hr />
+
+
+    <h2 class="null">Nothin but huge #webperf fails!</h2>
+
+    <p>It's Friday, so here's a few massive #webperf LOLZ. But let's be nice and assume the developers have no control over what gets spat out to the browser on any of these sites...</p>
+     
+
+    {% for a in site.data.news7.worst %}
+    <div class="article">
+    <h3 class="null">{{ a.rank }}. <a href="{{ a.url }}" target="_blank">{{ a.title }}</a></h3>
+    <p>{{ a.description }} <em>{{ a.requests }} requests = LOL</em></p>
+    </div>
+    </div>
+    {% endfor %}
+    
+
+    <hr /> 
+    <h2 class="null">Articles</h2>
+
+    <p>Here's a mix of some good reads this week on web performance...</p>
+     
+
+    {% for a in site.data.news7.articles %}
+    <div class="article">
+    <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+    <p>{{ a.description }}</p>
+    </div>
+    {% endfor %}
+
+    <hr />
+
+    <h2 class="mc-toc-title">Videos</h2>
+
+    <p>Grab a coffee, pretend to do some work, but secretly watch these awesome videos...</p>
+     
+
+
+    {% for a in site.data.news7.videos %}
+    <div class="article">
+    <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+    <p>{{ a.description }}</p>
+    </div>
+    {% endfor %}
+   
+    <hr />
+    <h2 class="null">#webperf Tweeps</h2>
+
+    <p>Here's who to follow this week for the best #webperf tweets...</p>
+     
+
+
+    {% for a in site.data.news7.tweeps %}
+    <div class="article">
+    <h3 class="null">{{ a.rank }}. {{ a.name }} <a href="https://twitter.com/{{ a.handle }}" target="_blank">@{{ a.handle }}</a></h3>
+
+    <p><em>{{ a.bio }}</em></p>
+    </div>
+    {% endfor %}
+
+    <hr />&nbsp;
+
+    <h3 class="null">Remember, you can follow all of the people featured above on Twitter via our lists...</h3>
+    <br />
+    Here&#39;s a Twitter list of everyone featured in this week's newsletter:<br />
+    <a href="https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news7.issue_number }}/members" target="_blank">https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news7.issue_number }}/members</a><br />
+    <br />
+
+    <hr />&nbsp;
+    <br />
+    Hope you enjoyed the newsletter. Until next week, let's keep making the internet faster for everyone!<br />
+    <br />
+    - Andy Shora <a href="https://twitter.com/andyshora" target="_blank">@andyshora</a><br />
+     
+  </section>
+
+  <section class="signup">
+    <div id="mc_embed_signup">
+      <form action="http://managewith.us2.list-manage.com/subscribe/post?u=0cd6c1319d2fbfc92b5a96ff3&amp;id=6cec6576b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h2>Subscribe to newsletter. We won't spam you.</h2>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address</label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_0cd6c1319d2fbfc92b5a96ff3_6cec6576b0" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a>. Feel free to tweet me submission ideas. <a href="feed.xml">RSS Feed</a></p>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17716290-14', 'webperformancenews.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
