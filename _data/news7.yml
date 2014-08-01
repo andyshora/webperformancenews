@@ -30,7 +30,7 @@ sites:
    author: SmashingMag
    url: "https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.smashingmagazine.com%2F"
    site_url: "http://www.smashingmagazine.com"
-   description: "For such a huge site with tons of traffic, hats off to the SmashingMag team for achieving great scores for mobile and desktop, and a massive 99% for Mobile UX!"
+   description: For such a huge site with tons of traffic, hats off to the SmashingMag team for achieving great scores for mobile and desktop, and a massive 99% for Mobile UX!
 
 worst:
 - rank: 1
