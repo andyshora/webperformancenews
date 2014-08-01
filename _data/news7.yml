@@ -6,18 +6,18 @@ articles:
    title: "When Design Best Practices Become Performance Worst Practices"
    description: "Slides from Tammy's webperf talk, in which the focus was on what happens when long-held design conventions turn out to be performance liabilities."
    author: tameverts
-- url: "http://filamentgroup.com/lab/performance-rwd.html"
-  title: "How we make RWD sites load fast as heck"
-  description: "In this post, Scott outlines some recent observations and approaches to delivering sites for speed and broader access, and links out to various tools he is using to facilitate the approach."
-  author: scottjehl
-- url: "http://timkadlec.com/2014/05/performance-budgeting-with-grunt/"
-  title: "Performance Budgeting With Grunt"
-  description: "Tim has made a brilliant tool which allows you to specify a performance budget, a minimum performance score your website must achieve on WebPageTest during the build."
-  author: tkadlec
-- url: "http://www.smashingmagazine.com/2014/07/22/responsive-web-design-should-not-be-your-only-mobile-strategy/"
-  title: "You May Be Losing Users If Responsive Web Design Is Your Only Mobile Strategy"
-  description: "You are losing users and probably money if responsive web design is your entire goal and your only solution for mobile."
-  author: firt
+ - url: "http://filamentgroup.com/lab/performance-rwd.html"
+   title: "How we make RWD sites load fast as heck"
+   description: "In this post, Scott outlines some recent observations and approaches to delivering sites for speed and broader access, and links out to various tools he is using to facilitate the approach."
+   author: scottjehl
+ - url: "http://timkadlec.com/2014/05/performance-budgeting-with-grunt/"
+   title: "Performance Budgeting With Grunt"
+   description: "Tim has made a brilliant tool which allows you to specify a performance budget, a minimum performance score your website must achieve on WebPageTest during the build."
+   author: tkadlec
+ - url: "http://www.smashingmagazine.com/2014/07/22/responsive-web-design-should-not-be-your-only-mobile-strategy/"
+   title: "You May Be Losing Users If Responsive Web Design Is Your Only Mobile Strategy"
+   description: "You are losing users and probably money if responsive web design is your entire goal and your only solution for mobile."
+   author: firt
 
 videos:
  - url: "http://www.youtube.com/watch?v=ep0_0W0qWsc"
