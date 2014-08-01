@@ -46,11 +46,11 @@ tweeps:
    name: Scott Jehl
    handle: scottjehl
    bio: "Full snack developer at Filament Group. Writing @responsiblerwd. Hopefully outside right now."
-- rank: 2
+ - rank: 2
    name: Tim Kadlec
    handle: tkadlec
    bio: "A web developer living in Wisconsin. Author of Implementing Responsive Design."
-- rank: 3
+ - rank: 3
    name: Alex Danilo
    handle: alexanderdanilo
    bio: "Voracious technology sponge, can't get enough of the digital world (and give it back)"
