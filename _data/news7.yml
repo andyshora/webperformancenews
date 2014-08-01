@@ -19,7 +19,6 @@ articles:
   description: "You are losing users and probably money if responsive web design is your entire goal and your only solution for mobile."
   author: firt
 
-
 videos:
  - url: http://www.youtube.com/watch?v=ep0_0W0qWsc
    title: Silky smooth Web Animations
@@ -53,5 +52,5 @@ tweeps:
  - rank: 3
    name: Alex Danilo
    handle: alexanderdanilo
-   bio: "Voracious technology sponge, can't get enough of the digital world (and give it back)"
+   bio: "Voracious technology sponge, can't get enough of the digital world - and give it back"
 
