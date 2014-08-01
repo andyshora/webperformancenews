@@ -29,15 +29,14 @@ sites:
  - rank: 1
    author: SmashingMag
    url: https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.smashingmagazine.com%2F
-   site_url: http://www.smashingmagazine.com
+   site_url: "http://www.smashingmagazine.com"
    description: "For such a huge site with tons of traffic, hats off to the SmashingMag team for achieving great scores for mobile and desktop, and a massive 99% for Mobile UX!"
-
 
 worst:
 - rank: 1
   title: "Fox News"
   description: "Taking three seconds to even start rendering, and a massive 12 seconds to download the 277 requests required to load the homepage, Fox News are doing their bit to help destroy the web. It's debateable whether taking this long to read their news is a good thing for the world, but in terms of webperf, it's a massive fail."
-  requests: 277
+  requests: "277"
   url: http://www.webpagetest.org/result/140801_0Y_G8V/1/details/
 
 tweeps:
@@ -53,4 +52,3 @@ tweeps:
    name: Alex Danilo
    handle: alexanderdanilo
    bio: "Voracious technology sponge, can't get enough of the digital world - and give it back"
-
