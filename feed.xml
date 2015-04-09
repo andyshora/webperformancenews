@@ -26,5 +26,14 @@ layout: none
         <link>{{ news.url }}</link>
       </item>
     {% endfor %}
+    {% for news in site.data.news8.videos limit:10 %}
+      <item>
+        <title>{{ news.title | xml_escape }}</title>
+        <description>{{ news.description | xml_escape }}</description>
+        <pubDate>{{ site.data.news8.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <author>http://twitter.com/{{ news.author }}</author>
+        <link>{{ news.url }}</link>
+      </item>
+    {% endfor %}
   </channel>
 </rss>

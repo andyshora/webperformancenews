@@ -1,0 +1,52 @@
+issue_number: 8
+date: 2015-04-10 15:00:00 +0000
+
+articles:
+ - url: "http://pathtoperf.com/2015/04/07/01-with-lara-hogan.html"
+   title: "New Podcast - The Path to Performance"
+   description: "A podcast for everyone dedicated to making websites faster."
+   author: lara_hogan
+ - url: "https://developers.google.com/web/fundamentals/performance/rendering/"
+   title: "Rendering Performance"
+   description: "Paul Lewis has added a nice new section added to Google's Web Fundamentals project, for optimizing performance."
+   author: aerotwist
+- url: "https://www.dareboost.com/en/webperf-impacts"
+   title: "Web Performance Impacts"
+   description: "A high level overview of the impacts of web performance. Sure to be useful when translating to the non-technical crowd."
+   author: DareBoost
+ - url: "https://codeascraft.com/2015/03/30/q1-2015-site-performance-report/"
+   title: "Etsy's Q1 2015 Site Performance Report"
+   description: "Spring has finally arrived, which means it’s time to share our Site Performance Report for the first quarter of 2015."
+   author: etsy
+ - url: "https://adactio.com/journal/8504"
+   title: "Inlining critical CSS for first-time visits"
+   description: "Some tips on how to implement critical CSS inline to boost your above-the-fold load time."
+   author: adactio
+
+videos:
+ - url: "https://www.youtube.com/watch?v=-D81Qj1YmPM"
+   title: "Real Metrics for Front-end Performance"
+   description: "Building a super-performant front-end is far harder and more intensive than making onLoad or onDomReady happen quicker — After you've removed 'blocking scripts', what do you do?"
+   author: benschwarz
+
+worst:
+- rank: 1
+  title: The Verge - Apple Watch Review
+  description: "Perhaps a weird combination of good engineering a design fail. A nice review some said, but I stopped counting when the download passed 12Mb. Check out the cost link, on mobile this page costs a few dollars to read in some countries! What's crazy is, they tried to optimize it. The devs are probably pretty decent, it's the design that fails the web."
+  requests: "327"
+  url: "http://www.webpagetest.org/result/150409_R0_YBX/"
+
+tweeps:
+ - rank: 1
+   name: Lara Hogan
+   handle: lara_hogan
+   bio: "Senior Engineering Manager of Performance at Etsy. Author of Designing for Performance. Feminist."
+ - rank: 2
+   name: Matt Shull
+   handle: TheMattShull
+   bio: "FEWD & AngularJS Mentor at Thinkful / Web Producer for aristotlebuzz / Internaut Extraordinaire"
+ - rank: 3
+   name: Ben Schwarz
+   handle: benschwarz
+   bio: "I build things for the web. Team member of CSSConfAU. I'm building calibreapp & I bless the rains down in Africa."
+

@@ -5,11 +5,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web Performance News, the monthly newsletter on everything web performance</title>
+  <title>Web Performance News, the weekly newsletter on everything web performance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    
-    html, body {
+   html, body {
       margin: 0;
       padding: 0;     
     }
@@ -28,6 +27,9 @@
     header > h1 {
       padding-top: 176px;
       background: url(wpn.png) center -50px no-repeat;
+    }
+    header > h1 > a {
+      border-bottom: none !important;
     }
     h1,h2,h3 {
       font-weight: 300;
@@ -112,7 +114,7 @@
     }
 
     footer {
-      margin: 50px 0 0 0;
+      margin: 0;
       padding: 2em 4em 2em;
       background-color: #191919;
       font-size: 0.9em;
@@ -143,7 +145,7 @@
     #mc_embed_signup{
       margin: 40px 0 0;
       clear: left;
-      font: 14px 'Open Sans', Helvetica, Arial, sans-serif;
+      font: 14px Helvetica,Arial,sans-serif;
       background: #E2FFE8;
       padding: 15px 0;
     }
@@ -170,13 +172,123 @@
       max-width: 80%;
     }
 
+    .newsletter hr {
+      margin: 20px 0;
+      background: rgba(205, 153, 155, 0.19);
+    }
+    .newsletter h2 {
+      font: 1.4em normal 'Open Sans', Helvetica, Arial, sans-serif;
+      margin: 2em 0 -0.2em;
+      
+    }
+    .newsletter h3 {
+      line-height: 2em;
+    }
+    .article {
+      padding: 10px 0;
+    }
+    .signup {
+      text-align: center;
+      padding: 20px 0;
+    }
+
   </style>
 </head>
 <body>
   <header>
-    <h1>Web Performance News</h1>
-    <h2>A free monthly newsletter containing articles and tips on web performance.</h2>
+    <h1><a href="/">Web Performance News</a>: Issue {{ site.data.news8.issue_number }}</h1>
+    <h2>A free weekly newsletter containing articles and tips on web performance.</h2>
     <p>Articles tweeted <a href="https://twitter.com/webperfnews">@webperfnews</a></p>
+  </header>
+  <section class="newsletter">
+    <h2 class="null">Here's this week's web performance news...</h2>
+
+    <h3>Don't forget to follow <a href="https://twitter.com/webperfnews" target="_blank">@webperfnews</a> on Twitter!</h3>
+
+    <hr /> 
+    <h3 class="null">Follow all of the people featured below on Twitter...</h3>
+    <br />
+    Here's a Twitter list of everyone featured in this week's newsletter:<br />
+    <a href="https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news8.issue_number }}/members" target="_blank">https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news8.issue_number }}/members</a><br />
+    <br />
+
+    <hr />
+
+
+    <h2 class="null">Nothin but huge #webperf fails!</h2>
+
+    <p>It's Friday, so here's a few massive #webperf LOLZ. But let's be nice and assume the developers have no control over what gets spat out to the browser on any of these sites...</p>
+     
+
+    {% for a in site.data.news8.worst %}
+    <div class="article">
+    <h3 class="null">{{ a.rank }}. <a href="{{ a.url }}" target="_blank">{{ a.title }}</a></h3>
+    <p>{{ a.description }} <em>{{ a.requests }} requests = LOL</em></p>
+    </div>
+    </div>
+    {% endfor %}
+    
+
+    <hr /> 
+    <h2 class="null">Articles</h2>
+
+    <p>Here's a mix of some good reads this week on web performance...</p>
+     
+
+    {% for a in site.data.news8.articles %}
+    <div class="article">
+    <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+    <p>{{ a.description }}</p>
+    </div>
+    {% endfor %}
+
+    <hr />
+
+    <h2 class="mc-toc-title">Videos</h2>
+
+    <p>Grab a coffee, pretend to do some work, but secretly watch these awesome videos...</p>
+     
+
+
+    {% for a in site.data.news8.videos %}
+    <div class="article">
+    <h3 class="null"><a href="{{ a.url }}" target="_blank">{{ a.title }}</a> by @{{ a.author }}</h3>
+    <p>{{ a.description }}</p>
+    </div>
+    {% endfor %}
+   
+    <hr />
+    <h2 class="null">#webperf Tweeps</h2>
+
+    <p>Here's who to follow this week for the best #webperf tweets...</p>
+     
+
+
+    {% for a in site.data.news8.tweeps %}
+    <div class="article">
+    <h3 class="null">{{ a.rank }}. {{ a.name }} <a href="https://twitter.com/{{ a.handle }}" target="_blank">@{{ a.handle }}</a></h3>
+
+    <p><em>{{ a.bio }}</em></p>
+    </div>
+    {% endfor %}
+
+    <hr />&nbsp;
+
+    <h3 class="null">Remember, you can follow all of the people featured above on Twitter via our lists...</h3>
+    <br />
+    Here&#39;s a Twitter list of everyone featured in this week's newsletter:<br />
+    <a href="https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news8.issue_number }}/members" target="_blank">https://twitter.com/WebPerfNews/webperf-people-{{ site.data.news8.issue_number }}/members</a><br />
+    <br />
+
+    <hr />&nbsp;
+    <br />
+    Hope you enjoyed the newsletter. Until next week, let's keep making the internet faster for everyone!<br />
+    <br />
+    - Andy Shora <a href="https://twitter.com/andyshora" target="_blank">@andyshora</a><br />
+     
+  </section>
+
+  <section class="signup">
     <div id="mc_embed_signup">
       <form action="http://managewith.us2.list-manage.com/subscribe/post?u=0cd6c1319d2fbfc92b5a96ff3&amp;id=6cec6576b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <h2>Subscribe to newsletter. We won't spam you.</h2>
@@ -192,72 +304,6 @@
         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
       </form>
     </div>
-
-  </header>
-  <section>
-    <h1>Latest Articles</h1>
-    <ul>
-    {% for news in site.data.news7.articles %}
-      <li>
-        <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news7.date }}">{{ site.data.news7.date | date_to_string }}</time></p>
-        <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
-        <a href="{{ news.url }}" class="button">Read more</a>
-      </li>
-    {% endfor %}
-    </ul>
-
-    <h1>Latest Videos</h1>
-    <ul>
-    {% for news in site.data.news7.videos %}
-      <li>
-        <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news7.date }}">{{ site.data.news7.date | date_to_string }}</time></p>
-        <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
-        <a href="{{ news.url }}" class="button">Read more</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </section>
-  <section>
-    <h1>Archived Newsletters</h1>
-    <h3><a href="newsletter-8.html" title="Issue 8">Issue 8</a></h3>
-    <p>Sent out on {{ site.data.news8.date | date_to_string }}, and featuring
-      {% for a in site.data.news8.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>,
-      {% endfor %} and more.</p>
-    <h3><a href="newsletter-7.html" title="Issue 7">Issue 7</a></h3>
-    <p>Sent out on {{ site.data.news7.date | date_to_string }}, and featuring
-      {% for a in site.data.news7.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>,
-      {% endfor %} and more.</p>
-    <h3><a href="newsletter-6.html" title="Issue 6">Issue 6</a></h3>
-    <p>Sent out on {{ site.data.news6.date | date_to_string }}, and featuring 
-      {% for a in site.data.news6.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
-      {% endfor %} and more.</p>
-    <h3><a href="newsletter-5.html" title="Issue 5">Issue 5</a></h3>
-    <p>Sent out on {{ site.data.news5.date | date_to_string }}, and featuring 
-      {% for a in site.data.news5.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
-      {% endfor %} and more.</p>
-    <h3><a href="newsletter-4.html" title="Issue 4">Issue 4</a></h3>
-    <p>Sent out on {{ site.data.news4.date | date_to_string }}, and featuring 
-      {% for a in site.data.news4.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
-      {% endfor %} and more.</p>
-    <h3><a href="newsletter-3.html" title="Issue 3">Issue 3</a></h3>
-    <p>Sent out on {{ site.data.news3.date | date_to_string }}, and featuring 
-      {% for a in site.data.news3.articles %}
-      <a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
-      {% endfor %} 
-      and many more interesting people.</p>
-    <h3><a href="newsletter-2.html" title="Issue 2">Issue 2</a></h3>
-    <p>Sent out on {{ site.data.news2.date | date_to_string }}, and featuring 
-      {% for a in site.data.news2.articles %}<a href="https://twitter.com/{{ a.author }}" target="_blank">@{{ a.author }}</a>, 
-      {% endfor %} 
-      and and loads more folk.</p>
-
   </section>
   <footer>
     <p>Web Performance News is curated by <a href="http://twitter.com/andyshora">Andy Shora</a>. Feel free to tweet me submission ideas. <a href="feed.xml">RSS Feed</a></p>
