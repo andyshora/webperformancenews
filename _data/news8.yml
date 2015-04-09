@@ -10,7 +10,7 @@ articles:
    title: "Rendering Performance"
    description: "Paul Lewis has added a nice new section added to Google's Web Fundamentals project, for optimizing performance."
    author: aerotwist
-- url: "https://www.dareboost.com/en/webperf-impacts"
+ - url: "https://www.dareboost.com/en/webperf-impacts"
    title: "Web Performance Impacts"
    description: "A high level overview of the impacts of web performance. Sure to be useful when translating to the non-technical crowd."
    author: DareBoost
