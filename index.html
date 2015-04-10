@@ -197,10 +197,10 @@
   <section>
     <h1>Latest Articles</h1>
     <ul>
-    {% for news in site.data.news7.articles %}
+    {% for news in site.data.news8.articles %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news7.date }}">{{ site.data.news7.date | date_to_string }}</time></p>
+        <p><time datetime="{{ site.data.news8.date }}">{{ site.data.news8.date | date_to_string }}</time></p>
         <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
         <a href="{{ news.url }}" class="button">Read more</a>
       </li>
@@ -209,10 +209,10 @@
 
     <h1>Latest Videos</h1>
     <ul>
-    {% for news in site.data.news7.videos %}
+    {% for news in site.data.news8.videos %}
       <li>
         <a class="url" href="{{ news.url }}">{{ news.title }}</a>
-        <p><time datetime="{{ site.data.news7.date }}">{{ site.data.news7.date | date_to_string }}</time></p>
+        <p><time datetime="{{ site.data.news8.date }}">{{ site.data.news8.date | date_to_string }}</time></p>
         <p class="description">{{ news.description }} By <a class="author" href="http://twitter.com/{{ news.author }}">@{{ news.author }}</a></p>
         <a href="{{ news.url }}" class="button">Read more</a>
       </li>
